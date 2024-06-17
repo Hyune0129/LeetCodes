@@ -4,7 +4,7 @@ class Solution {
             return true;
         for(int a=0; Math.pow(a, 2) <= c; a++) {
             double temp = Math.sqrt(c - Math.pow(a,2));
-            System.out.println(temp);
+            // System.out.println(temp);
             if(temp == (int)temp) {
                 return true;
             }
