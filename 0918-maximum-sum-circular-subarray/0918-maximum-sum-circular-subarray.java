@@ -15,7 +15,7 @@ class Solution {
             minSub = Math.min(minSub, minSum);
             totalSum += nums[i];
         }
-        if(maxSub <= 0) { // [-3, -2, -3]
+        if(maxSub <= 0) { // [-3, -2, -3]   
             return maxSub;
         }
         
