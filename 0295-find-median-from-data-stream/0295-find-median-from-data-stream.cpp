@@ -8,8 +8,15 @@ public:
     }
     
     void addNum(int num) {
-        if(minHeap.size() == maxHeap.size()) {
+        if(minHeap.empty()) {
             minHeap.push(num);
+            return;
+        }
+        if(minHeap.size() == maxHeap.size()) {
+            int num2 = maxHeap.top();
+            maxHeap.pop();
+            minHeap.push(std::max(num, num2));
+            maxHeap.push(std::min(num, num2));
         } else {
             int num2 = minHeap.top();
             minHeap.pop();
