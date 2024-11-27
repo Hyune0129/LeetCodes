@@ -17,7 +17,7 @@ public:
             int sum = accumulate(combination.begin(), combination.end(), 0);
             if(sum == _n)
             {
-                ans.push_back(vector<int>(combination.begin(), combination.end()));
+                ans.push_back(combination);
             }
             return;
         }
